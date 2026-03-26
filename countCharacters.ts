@@ -3,8 +3,8 @@
 
 // What if the string is empty? Then the result should be empty object literal, {}.
 
-function count(str) {
-   return str.split("").reduce((acc, char)=> {
+function count(str: string): Record<string, number> {
+   return str.split("").reduce((acc: Record<string, number>, char: string): Record<string, number> => {
        if(acc[char]) acc[char] = acc[char]+1
        else acc[char] = 1
        return acc;

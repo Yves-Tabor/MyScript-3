@@ -7,6 +7,6 @@
 
 // Input: 145263 Output: 654321
 
-function descendingOrder(n){
-  return Number((n.toString()).split("").sort((a,b)=> b-a).join(""));
+export function descendingOrder(n: number): number {
+  return Number((n.toString()).split("").sort((a,b)=> b.localeCompare(a)).join(""));
 }

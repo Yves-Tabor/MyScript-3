@@ -8,9 +8,9 @@
 // uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 // uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 
-var uniqueInOrder = function(iterable){
+var uniqueInOrder = function(iterable: string | number[]){
   const array = typeof iterable === "string" ? iterable.split("") : iterable;
-  return array.filter((char, index, arr)=>{
+  return array.filter((char: string | number, index: number, arr: (string | number)[])=>{
 	    const current = arr[index]
 	    const next = arr[index + 1]
 	    if(current !== next){
