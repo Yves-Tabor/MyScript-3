@@ -1,4 +1,5 @@
 
+
 // In this kata, you will create a simple, immutable, singly-linked list.
 // Most list implementations use mutable nodes. Mutability brings with it a whole host of problems (especially in threaded environments, 
 // but even just with state saved and shared in multiple places). When you shift to immutable nodes, 
